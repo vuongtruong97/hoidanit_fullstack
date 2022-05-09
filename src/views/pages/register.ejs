@@ -1,0 +1,79 @@
+<div class="container">
+    <h2 class="text-center" id="title">Vuong Truong NodeJs</h2>
+    <hr />
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <form role="form" method="POST" action="/user/create">
+                <fieldset>
+                    <p class="text-uppercase pull-center">SIGN UP:</p>
+                    <div class="form-group">
+                        <input
+                            type="firstName"
+                            name="firstName"
+                            class="form-control input-lg"
+                            placeholder="First Name"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <input
+                            type="lastName"
+                            name="lastName"
+                            class="form-control input-lg"
+                            placeholder="Last Name"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <input
+                            type="email"
+                            name="email"
+                            class="form-control input-lg"
+                            placeholder="Email Address"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <input
+                            type="password"
+                            name="password"
+                            class="form-control input-lg"
+                            placeholder="Password..."
+                        />
+                    </div>
+                    <div class="form-group">
+                        <input
+                            type="phonenumber"
+                            name="phonenumber"
+                            class="form-control input-lg"
+                            placeholder="Phone number..."
+                        />
+                    </div>
+                    <div class="form-group">
+                        <input
+                            type="address"
+                            name="address"
+                            class="form-control input-lg"
+                            placeholder="Address..."
+                        />
+                    </div>
+                    <div class="form-group">
+                        <select class="custom-select" name="gender">
+                            <option value="">Chosee...</option>
+                            <option value="1">Male</option>
+                            <option value="0">Female</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <input
+                            type="submit"
+                            class="btn btn-primary"
+                            value="Submit"
+                        />
+                        <a href="/login" class="btn btn-primary text-white ml-2"
+                            >Login</a
+                        >
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

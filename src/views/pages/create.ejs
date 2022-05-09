@@ -1,0 +1,117 @@
+<div class="m-3 p-3 bg-secondary rounded">
+    <h1 class="text-center">Creat a new user</h1>
+    <form action="/user/create" method="POST">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="firstName">First Name</label>
+                <input
+                    required
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="First Name"
+                    name="firstName"
+                />
+            </div>
+            <div class="form-group col-md-6">
+                <label for="lastName">Last Name</label>
+                <input
+                    required
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Last Name"
+                />
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="email">Email</label>
+                <input
+                    required
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="e.g 'abcd@gmail.com'"
+                />
+            </div>
+            <div class="form-group col-md-6">
+                <label for="password">Password</label>
+                <input
+                    required
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    name="password"
+                    placeholder="e.g 'abcd@gmail.com'"
+                />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-7">
+                <label for="address">Address</label>
+                <input
+                    required
+                    name="address"
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="Ninh Binh - Viet Nam"
+                />
+            </div>
+            <div class="form-group col-md-5">
+                <label for="roleid">Date of Birth</label>
+                <input
+                    name=""
+                    type="date"
+                    timezone="[[timezone]]"
+                    class="form-control"
+                    id="birthday"
+                    placeholder="Ninh Binh - Viet Nam"
+                />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="phonenumber">Phone Number</label>
+                <input
+                    required
+                    name="phonenumber"
+                    type="text"
+                    class="form-control"
+                    id="phonenumber"
+                />
+            </div>
+            <div class="form-group col-md-4">
+                <label
+                    for="input
+                requiredState"
+                    >Role</label
+                >
+                <select name="roleid" id="roleid" class="form-control">
+                    <option value="">Choose...</option>
+                    <option value="1">ADMIN</option>
+                    <option value="2">Doctor</option>
+                    <option value="3">Patient</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <label
+                    for="input
+                requiredState"
+                    >Gender</label
+                >
+                <select name="gender" id="gender" class="form-control" required>
+                    <option value="">Choose...</option>
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                </select>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+</div>
